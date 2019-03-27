@@ -46,7 +46,8 @@ export default {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-    baseURL: 'https://topclean-backend.herokuapp.com/api/v1/'
+    // baseURL: 'https://topclean-backend.herokuapp.com/api/v1/'
+    baseURL: 'http://localhost:5000/api/v1'
   },
 
   /*

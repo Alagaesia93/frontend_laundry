@@ -22,3 +22,12 @@ export const mutations = {
     state.all = customers
   }
 }
+
+export const getters = {
+  getCustomer: state => id => {
+    return state.all.find(customer => customer.id === Number(id))
+  },
+  getCustomerProducts: (state, getters) => id => {
+    return getters.getCustomer(id).customerProducts
+  }
+}

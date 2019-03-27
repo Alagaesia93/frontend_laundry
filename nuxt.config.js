@@ -29,7 +29,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/axios'],
 
   /*
    ** Nuxt.js modules
@@ -46,6 +46,7 @@ export default {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    baseURL: 'https://topclean-backend.herokuapp.com/api/v1/'
   },
 
   /*
@@ -67,4 +68,8 @@ export default {
       }
     }
   }
+
+  // router: {
+  //   base: '/customers/'
+  // }
 }
